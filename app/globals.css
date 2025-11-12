@@ -68,17 +68,28 @@
   .bg-gradient-primary {
     background: var(--gradient-primary);
   }
+
   .bg-gradient-hero {
     background: var(--gradient-hero);
   }
+
+  .scrollbar-hide {
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+    background: transparent;
+}
 }
 
 
-/* Definex dark theme styles */
+/* Defines dark theme styles */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: hsl(220 30% 8%);
+    --foreground: hsl(210 40% 98%);
   }
 }
 

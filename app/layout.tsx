@@ -3,6 +3,8 @@ import { Geist, Geist_Mono, Maven_Pro, Ubuntu } from "next/font/google";
 
 // @ts-ignore
 import "./globals.css";
+import NavBar from "@/components/(layout)/NavBar";
+import SideNav from "@/components/(layout)/SideNav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,6 +41,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} ${mavenPro.variable} ${ubuntu.variable} antialiased`}>
+        <NavBar />
+        <SideNav />
         {children}
       </body>
     </html>
